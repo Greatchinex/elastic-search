@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 
-// import routes from "./api/routes";
+import routes from "./api/routes";
 import "./services/elasticSearch";
 
 const app = express();
@@ -9,7 +9,7 @@ dotenv.config();
 const port = process.env.PORT;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// routes(app);
+routes(app);
 
 app.get("/", (req, res) => {
   res.json({ msg: "Index Route" });
