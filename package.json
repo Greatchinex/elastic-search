@@ -1,0 +1,23 @@
+{
+  "name": "elastic_search_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-watch ./src/server.js"
+  },
+  "author": "Chilaka Chinedu",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
+    "babel-watch": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "elasticsearch": "^16.5.0"
+  }
+}
